@@ -1,0 +1,50 @@
+.MiniGames{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    gap: 15px;
+}
+
+.MiniGames .Preview{
+    width: 350px;
+    height: 350px;
+    background-color: white; 
+    margin: auto;
+    border-radius: 20px;
+    padding: 5px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MiniGames .Preview h2{
+    color: black;
+
+    position: absolute;
+    margin: auto;
+}
+
+.MiniGames .Preview img{
+    position: absolute;
+    opacity: 0;
+    width: 95%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: opacity 1s ease;
+}
+
+.MiniGames .Preview:hover img{
+    opacity: 1;
+}
+
+@media screen and (max-width:480px) {
+    .MiniGames{
+        width: 100%;
+    }
+    .MiniGames .Preview{
+    scale: 75%;
+    }
+}

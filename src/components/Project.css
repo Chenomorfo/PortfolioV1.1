@@ -1,0 +1,72 @@
+.Project{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    width: 80%;
+    margin: auto;
+    gap: 15px;
+}
+
+.Project .Card{
+    width: 250px;
+    height: 400px;
+    margin: auto;
+    border: 3px solid white;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease-in;
+    overflow: hidden;
+}
+
+.Project .Card h2{
+    font-size: 4rem;
+    transition: color 0.25s ease-in;
+    user-select: none;
+    display: flex;
+}
+
+
+.Project .Card:hover{
+    background-color: snow;
+}
+
+.Project .Card:hover h2{
+    color: #242424;
+}
+
+.Project .Card .Content{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 15px;
+}
+
+.Project .Card .Content a{
+    text-decoration: none;
+    transition: all 0.25s ease;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: white;
+}
+
+
+.Project .Card:hover .Content a{
+    color: #242424;
+    border: 3px solid #242424;
+
+}
+
+.Project .Card:hover .Content a:hover{
+    background-color: #242424;
+    color: white;
+}
+
+@media screen and (max-width:925px){
+    .Project{
+        padding-bottom: 280px;
+    }
+}

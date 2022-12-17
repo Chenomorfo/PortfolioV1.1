@@ -1,0 +1,18 @@
+.App{
+    height: 95vh;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    gap: 40px;
+}
+
+.App .Container{
+    overflow: auto;
+    height: 100%;
+}
+
+@media screen and (max-width:925px) {
+    
+    .App{
+        display: block;
+    }
+}
