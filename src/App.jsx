@@ -15,10 +15,10 @@ function App() {
         <NavBar />
         <div className="Container">
           <Routes>
-            <Route path="/" element={<Biography />} />
-            <Route path="/Projects" element={<Project />} />
-            <Route path="/Skills" element={<Skills />} />
-            <Route path="/Minigames" element={<MiniGames />} />
+            <Route path="/PortfolioV1.1/" element={<Biography />} />
+            <Route path="/PortfolioV1.1/Projects" element={<Project />} />
+            <Route path="/PortfolioV1.1/Skills" element={<Skills />} />
+            <Route path="/PortfolioV1.1/Minigames" element={<MiniGames />} />
           </Routes>
         </div>
       </div>
