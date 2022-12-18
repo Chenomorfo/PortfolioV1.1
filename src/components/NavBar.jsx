@@ -56,16 +56,16 @@ function NavBar() {
       {TextIcon("", menuOpen ? openMenu : menu)}
       <ul>
         <li style={menuOpen ? dynamicMenu(1) : null}>
-          <Link to="/">{TextIcon("About Me", aboutMe)}</Link>
+          <Link to="PortfolioV1.1/">{TextIcon("About Me", aboutMe)}</Link>
         </li>
         <li style={menuOpen ? dynamicMenu(2) : null}>
-          <Link to="/Projects">{TextIcon("Projects", projects)}</Link>
+          <Link to="PortfolioV1.1/Projects">{TextIcon("Projects", projects)}</Link>
         </li>
         <li style={menuOpen ? dynamicMenu(-1) : null}>
-          <Link to="/Skills">{TextIcon("Skills", skills)}</Link>
+          <Link to="PortfolioV1.1/Skills">{TextIcon("Skills", skills)}</Link>
         </li>
         <li style={menuOpen ? dynamicMenu(-2) : null}>
-          <Link to="/Minigames">{TextIcon("Mini Games", minigames)}</Link>
+          <Link to="PortfolioV1.1/Minigames">{TextIcon("Mini Games", minigames)}</Link>
         </li>
       </ul>
     </div>
