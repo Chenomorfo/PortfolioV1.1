@@ -75,7 +75,6 @@ function Biography() {
     );
   };
 
-
   return (
     <div className="AboutMe">
       <div className="Biography">
@@ -86,8 +85,12 @@ function Biography() {
       <footer>
         <h3>You can reach me here:</h3>
         <div className="SocialMedia">
-          <img src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"/>
-          <img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw"/>
+          <a href="https://github.com/Chenomorfo" target="_blank">
+            <img src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU" />
+          </a>
+          <a href="https://www.linkedin.com/in/ahhvaliascheno/" target="_blank">
+            <img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" />
+          </a>
         </div>
       </footer>
     </div>
