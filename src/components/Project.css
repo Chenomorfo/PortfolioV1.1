@@ -27,6 +27,12 @@
     display: flex;
 }
 
+.Project .Card h2 img{
+    width: 50%;
+    margin: auto;
+    filter: invert(100%);
+    transition: filter 0.25s ease-in;
+}
 
 .Project .Card:hover{
     background-color: snow;
@@ -34,6 +40,10 @@
 
 .Project .Card:hover h2{
     color: #242424;
+}
+
+.Project .Card:hover h2 img{
+    filter: invert(0);
 }
 
 .Project .Card .Content{
