@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import myPic from "../assets/myPic.jfif";
+import myIcon from "../assets/myIcon.png";
 import "../components/Biography.css";
 
 function Biography() {
@@ -75,11 +76,20 @@ function Biography() {
     );
   };
 
+  const [ImOver, setImOver] = useState(false);
+
+  const Diamond = { transform: "rotateZ(45deg) scale(70%)"};
+
   return (
     <div className="AboutMe">
       <div className="Biography">
-        <img src={myPic} alt="" />
-        <div>{simpleFormat()}</div>
+        <img
+          onMouseOut={(e) => setImOver(false)}
+          onMouseOver={(e) => setImOver(true)}
+          src={!ImOver ? myPic : myIcon}
+          style={ImOver ? Diamond : null}
+        />
+        <div> {!ImOver ? simpleFormat() : jsonFormat()}</div>
       </div>
 
       <footer>
